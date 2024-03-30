@@ -7,7 +7,7 @@ import TableFile from "../components/Tables/TableFile";
 jest.mock("../hook/useFile", () => ({
   __esModule: true,
   default: () => ({
-    getFiles: jest.fn(), // Mockear la función getFiles
+    getFiles: jest.fn(),
   }),
 }));
 
