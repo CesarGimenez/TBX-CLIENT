@@ -7,8 +7,7 @@ const useFile = () => {
   const getFiles = async () => {
     try {
       dispatch(setLoading(true));
-      const response = await getFilesAPI();
-      const { files } = response;
+      const files = await getFilesAPI();
       const filesData = files.flatMap((file) =>
         file.lines.map((line) => ({ ...line, file: file.file }))
       );
@@ -23,8 +22,7 @@ const useFile = () => {
   const getFile = async (query) => {
     try {
       dispatch(setLoading(true));
-      const response = await getFilesByQueryAPI(query);
-      const { file } = response;
+      const file = await getFilesByQueryAPI(query);
       const fileData = [];
       if (file.lines.length > 0) {
         for (const line of file.lines) {
