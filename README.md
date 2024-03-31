@@ -1,16 +1,16 @@
 
-## Available Scripts
+## In the project directory, you can run:
 
-In the project directory, you can run:
-### `npm i`
-### `npm start`
+`npm i`
 
-Runs the app in the development mode at localhost:3001
-Open [http://localhost:3001]
+`npm start`
 
-Test the app with Jest
+## Runs the app in the development mode at localhost:3001
+Open http://localhost:3001
 
-### `npm test a`
+## Test the app with Jest
 
-Docker compose 
-## `docker-compose up -d`
+`npm test a`
+
+## Docker compose 
+`docker-compose up -d`
